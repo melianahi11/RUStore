@@ -37,32 +37,29 @@ RUStore consists of two main components:
 ### Building the Project
 
 1. Clone the repository:
-   ```sh
    git clone https://github.com/yourusername/RUStore.git
    cd RUStore
 Compile the Java files:
-sh
-Copy code
+
 javac -d bin src/com/RUStore/*.java
-Running the Server
+
+### Running the Server
 To start the RUStore server, use the following command:
 
-sh
-Copy code
 java -cp bin com.RUStore.RUStoreServer <port>
 Replace <port> with the desired port number.
 
-Running the Client
+### Running the Client
 To use the RUStore client, create an instance and connect to the server:
 
 java
-Copy code
 RUStoreClient client = new RUStoreClient("localhost", <port>);
 client.connect();
 Replace <port> with the port number on which the server is running.
 
-Usage
-Client Methods
+## Usage
+
+### Client Methods
 Here are the main methods provided by the RUStoreClient class:
 
 connect(): Establishes a connection to the server.
